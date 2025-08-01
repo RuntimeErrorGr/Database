@@ -1,5 +1,3 @@
-// Lăbău Cristea Andrei Liviu 314CB
-
 An interactive console was implemented to allow the user to interact with the database. This was done using two strings read from the keyboard: `command` and `command2`. Since it is guaranteed that the first user command will be `INIT_DB` followed by the name of the database, we first verify if it was entered correctly and read the name from standard input. To determine the subsequent commands, we enter a `while` loop where a sequence of `if` statements is used. The only command that breaks the loop, deletes the database, and stops program execution is `DELETE_DB`.
 
 After entering the `INIT_DB` command and reading the database name, the `INIT_DB` function is called, which allocates memory for a `t_db` element and initializes its name field.
